@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>Jqueary Plugin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="lightbox/lightbox.min.css">
+  
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="owlcarousel/css/owl.carousel.min.css"><link rel="stylesheet" href="owlcarousel/css/owl.theme.default.min.css">
+
+  <link href="Parallax/css/style.css" rel="stylesheet" type="text/css" />
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="filter/css/index.css">
+
+
+</head>
+<body>
+
+<div class="well">
+<div class="container">
+  <section>
+    <h3>Two Individual Images</h3>
+    <div>
+      <a class="example-image-link" href="lightbox/nature_b.jpg" data-lightbox="example-1"><img class="example-image" src="lightbox/nature_s.jpg" alt="image-1" /></a>
+      <a class="example-image-link" href="lightbox/nature1_b.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="lightbox/nature1_s.jpg" alt="image-1"/></a>
+    </div>
+
+    <hr />
+
+    <h3>A Four Image Set</h3>
+    <div>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
+      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+    </div>
+  </section>    
+</div>
+</div>
+
+
+
+
+
+<div class="well">
+<div class="container" >
+
+<h1 style="margin: 150px auto 30px auto; text-align: center;">jQuery picturehover Plugin Demos</h1>
+<div id="demo-1" style="width: 450px;margin: 30px auto;">
+<h2>Basic Demo</h2>
+  <img src="https://unsplash.it/450/330?image=836" alt="" title="Lechon Kirb" style="width: 450px; height: auto; border: 5px solid #c5c5c5; border-radius: 4px; ">
+</div>
+<div id="demo-2" style="width: 450px;margin: 30px auto;" data-picturehover>
+<h2>Using data attribute</h2>
+  <img src="https://unsplash.it/450/330?image=861" alt="" title="Pablo GarciaSaldaña" style="width: 450px; height: auto; border: 5px solid #c5c5c5; border-radius: 4px; ">
+</div>
+
+<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="Hover-Effects/js/picturehover.js"></script>
+
+<script>
+  $('#demo-1').picturehover().on('slideInEnd',function(event,data){
+      console.log('In-----'+data);
+
+  }).on('slideOutEnd',function(event,data){
+      console.log('Out----'+data);
+  })
+  $('#demo-3').picturehover({
+      caption:'alt',
+  })
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>    
+
+</div>
+</div>
+
+
+
+<div class="well">
+<div class="container">
+
+  
+<div id="first" class="owl-carousel owl-theme">
+<div class="item"><img src="owlcarousel/images/nature/nature1.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature2.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature3.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature4.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature5.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature6.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature7.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature8.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature9.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature10.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature11.jpg"></div>
+<div class="item"><img src="owlcarousel/images/nature/nature12.jpg"></div>
+</div>
+
+
+<div  id="secound" class="owl-carousel owl-theme" >
+
+<div class="item"><img src="owlcarousel/images/hill/hill1.jpg"></div>
+<div class="item"><img src="owlcarousel/images/hill/hill2.jpg"></div>
+<div class="item"><img src="owlcarousel/images/hill/hill3.jpg"></div>
+<div class="item"><img src="owlcarousel/images/hill/hill4.jpg"></div> 
+
+</div>
+
+
+<button id="play" class="owl-theme">Play</button>
+<button id="stop" class="owl-theme">Stop</button>
+ 
+</div> 
+</div>
+
+
+
+<div class="well">
+<div class="container">
+  
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#nav').localScroll(800);
+  
+  //.parallax(xPosition, speedFactor, outerHeight) options:
+  //xPosition - Horizontal position of the element
+  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+  $('#intro').parallax("50%", 0.1);
+  $('#second').parallax("50%", 0.1);
+  $('.bg').parallax("50%", 0.4);
+  $('#third').parallax("50%", 0.3);
+})
+</script>
+
+  <ul id="nav">
+    <li><a href="#intro" title="Next Section"><img src="Parallax/images/dot.png" alt="Link" /></a></li>
+      <li><a href="#second" title="Next Section"><img src="Parallax/images/dot.png" alt="Link" /></a></li>
+      <li><a href="#third" title="Next Section"><img src="Parallax/images/dot.png" alt="Link" /></a></li>
+      <li><a href="#fifth" title="Next Section"><img src="Parallax/images/dot.png" alt="Link" /></a></li>
+  </ul>
+  
+  <div id="intro">
+    <div class="story">
+        <div class="float-left">
+      <h2>(Almost) Static Background</h2>
+          <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.</p>
+          </div>
+      </div> <!--.story-->
+  </div> <!--#intro-->
+  
+  <div id="second">
+    <div class="story"><div class="bg"></div>
+        <div class="float-right">
+              <h2>Multiple Backgrounds</h2>
+              <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+          </div>
+      </div> <!--.story-->
+      
+  </div> <!--#second-->
+  
+  <div id="third">
+    <div class="story">
+        <div class="float-left">
+            <h2>What Happens When JavaScript is Disabled?</h2>
+              <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+          </div>
+      </div> <!--.story-->
+  </div> <!--#third-->
+  
+  <div id="fifth">
+    <div class="story">
+        <p>Check out my new plugin <a href="http://www.sequencejs.com" title="Sequence.js">Sequence.js</a> for parallax effects and a whole lot more!</p>
+          
+          <h2>Ian Lunn</h2>
+          <ul>
+              <li><strong>Twitter</strong>: <a href="http://www.twitter.com/IanLunn" title="Follow Ian on Twitter">@IanLunn</a></li>
+              <li><strong>GitHub</strong>: <a href="http://www.github.com/IanLunn" title="Follow Ian on GitHub">IanLunn</a></li>
+              <li><strong>Website</strong>: <a href="http://www.ianlunn.co.uk/" title="Ian Lunn Design">www.ianlunn.co.uk</a></li>
+          </ul>
+          
+          <p>This demo is based on the <a href="http://www.nikebetterworld.com" title="Nike Better World">Nikebetterworld.com</a> website.</p>
+          
+          <h2>Credits</h2>
+          <p>This plugin makes use of some scripts and images made by others:</p>
+          <ul>
+            <li><a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html" title="jQuery ScrollTo">jQuery ScrollTo</a></li>
+              <li><a href="http://downloads.dvq.co.nz/" title="Background Textures">Wooden and Pyschedlic Background Textures</a></li>
+              <li><a href="http://www.sxc.hu/photo/931435" title="Trainers Image">Trainers Image</a></li>
+              <li><a href="http://www.sxc.hu/photo/1015485" title="Basketball Image">Basketball Image</a></li>
+              <li><a href="http://www.sxc.hu/photo/563767" title="Bottles Image">Bottles Image</a></li>
+          </ul>
+      </div> <!--.story-->
+  </div> <!--#fifth-->
+
+</div> 
+</div>
+
+
+<div class="well">
+<div class="container">
+        <!-- Filter Controls - Simple Mode -->
+    <div class="row">
+            <!-- A basic setup of simple mode filter controls, all you have to do is use data-filter="all"
+            for an unfiltered gallery and then the values of your categories to filter between them -->
+            <ul class="simplefilter">
+                Simple filter controls:
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="1">Cityscape</li>
+                <li data-filter="2">Landscape</li>
+                <li data-filter="3">Industrial</li>
+                <li data-filter="4">Daylight</li>
+                <li data-filter="5">Nightscape</li>
+            </ul>
+        </div>
+
+        <!-- Filter Controls - Multifilter Mode -->
+        <div class="row">
+            <!-- A basic setup of multifilter controls, when the user toggles a category
+            the corresponding items are rendered or hidden -->
+            <ul class="multifilter">
+                Multifilter controls:
+                <li data-multifilter="1">Cityscape</li>
+                <li data-multifilter="2">Landscape</li>
+                <li data-multifilter="3">Industrial</li>
+            </ul>
+        </div>
+
+        <!-- Shuffle & Sort Controls -->
+        <div class="row">
+            <ul class="sortandshuffle">
+                Sort &amp; Shuffle controls:
+                <!-- Basic shuffle control -->
+                <li class="shuffle-btn" data-shuffle>Shuffle</li>
+                <!-- Basic sort controls consisting of asc/desc button and a select -->
+                <li class="sort-btn active" data-sortAsc>Asc</li>
+                <li class="sort-btn" data-sortDesc>Desc</li>
+                <select data-sortOrder>
+                    <option value="domIndex">
+                        Position
+                    </option>
+                    <option value="sortData">
+                        Description
+                    </option>
+                </select>
+            </ul>
+        </div>
+
+        <!-- Search control -->
+        <div class="row search-row">
+            Search control:
+            <input type="text" class="filtr-search" name="filtr-search" data-search>
+        </div>
+
+        <div class="row">
+            <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
+            attribute, which starts from the value 1 and goes up from there -->
+            <div class="filtr-container">
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="Busy streets">
+                    <img class="img-responsive" src="filter/img/city_1.jpg" alt="sample image">
+                    <span class="item-desc">Busy Streets</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 5" data-sort="Luminous night">
+                    <img class="img-responsive" src="filter/img/nature_2.jpg" alt="sample image">
+                    <span class="item-desc">Luminous night</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="City wonders">
+                    <img class="img-responsive" src="filter/img/city_3.jpg" alt="sample image">
+                    <span class="item-desc">city wonders</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="In production">
+                    <img class="img-responsive" src="filter/img/industrial_1.jpg" alt="sample image">
+                    <span class="item-desc">in production</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3, 4" data-sort="Industrial site">
+                    <img class="img-responsive" src="filter/img/industrial_2.jpg" alt="sample image">
+                    <span class="item-desc">industrial site</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+                    <img class="img-responsive" src="filter/img/nature_1.jpg" alt="sample image">
+                    <span class="item-desc">peaceful lake</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 5" data-sort="City lights">
+                    <img class="img-responsive" src="filter/img/city_2.jpg" alt="sample image">
+                    <span class="item-desc">city lights</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+                    <img class="img-responsive" src="filter/img/nature_3.jpg" alt="sample image">
+                    <span class="item-desc">dreamhouse</span>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" data-sort="Restless machines">
+                    <img class="img-responsive" src="filter/img/industrial_3.jpg" alt="sample image">
+                    <span class="item-desc">restless machines</span>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
+  
+</div>
+
+
+
+
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="lightbox/lightbox-plus-jquery.min.js"></script>
+
+
+
+<script src="owlcarousel/js/jquery.min.js"></script>
+<script src="owlcarousel/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="owlcarousel/js/app.js"></script>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="Parallax/js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="Parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="Parallax/js/jquery.scrollTo-1.4.2-min.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="filter/filterizr/jquery.filterizr.js"></script>
+    <script src="filter/js/controls.js"></script>
+
+
+</body>
+</html>
